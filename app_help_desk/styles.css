@@ -21,3 +21,21 @@
      width: 100%;
      margin: 0 auto;
    }
+
+   .botao-sair{
+    display: inline-block;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.5;
+   }
+
+   .botao-sair:{
+    background-color: rgba(235, 3, 3, 0.527);
+    color: white;
+    transform: scale(1.1);
+   }
+   

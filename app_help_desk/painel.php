@@ -1,17 +1,13 @@
 <?php
-  session_start();
-  // echo $_SESSION['autenticado'];
-  if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM'){
-    header ('Location: index.php?login=erro2');
-  }
+
+require_once ("login.php");
 
 ?>
 
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>App Help Desk</title>
-
+    <title>App help desk</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
    
@@ -23,8 +19,15 @@
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        <strong> BEM VINDO AO SITE! <strong> 
+        <h6>agradecemos a preferência!</h6>
       </a>
+    <ul class="navbar-mav">
+      <li class="nav-item">
+        <button onclick="location.href='logoff.php'" class="botão-sair" type="button">
+</li>
+</ul>
+</nav>
     </nav>
 
     <div class="container">    

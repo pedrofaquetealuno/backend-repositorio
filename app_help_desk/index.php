@@ -16,7 +16,7 @@
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        <strong> SITE DO PH :3 <strong> 
       </a>
     </nav>
 
@@ -37,14 +37,20 @@
                   <input name='senha' type="password" class="form-control" placeholder="Senha" require>
                 </div>
 
-                <?php if(isset($_GET['login']) && $_GET['login'] == 'erro'){?>
+                <?php 
+                if(isset($_GET['login']) && $_GET['login'] == 'erro'){
+                  ?>
 
                 <div class="text-danger">
                   Usuário ou senha inválido(s)
                 </div>
 
                 <?php } ?>
-                <?php if(isset($_GET['login']) && $_GET['login'] == 'erro2'){?>
+
+                <?php 
+                
+                if(isset($_GET['login']) && $_GET['login'] == 'erro2'){
+                  ?>
 
                 <div class="text-danger">
                   Faça login antes de acessar as páginas
